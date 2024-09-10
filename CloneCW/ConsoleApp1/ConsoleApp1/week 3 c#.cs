@@ -5,8 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            //testing git commit/push/pull
-            //push pull
+            // data types 
         }
     }
 }
