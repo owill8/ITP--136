@@ -35,7 +35,9 @@
             grandTotal = subTotal + GrandTax;
             Console.WriteLine("Your grandTotal is: {0}{1}", grandTotal.ToString("C"), "!");
 
-            Console.ReadKey();
+            
+
+            
         }
 
 
