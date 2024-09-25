@@ -12,9 +12,9 @@ namespace week_5_project
             int total;
 
 
-            Console.WriteLine("*.*.*.*.*.*.*.*.*.*.*.*.*.*.*");
-            Console.WriteLine("Welcome to sports calculator");
-            Console.WriteLine("*.*.*.*.*.*.*.*.*.*.*.*.*.*.*");
+            Console.WriteLine("*.*.*.*.*.*.*.*.*.*.*.*.*.*.*\n");
+            Console.WriteLine("Welcome to sports calculator\n");
+            Console.WriteLine("*.*.*.*.*.*.*.*.*.*.*.*.*.*.*\n");
 
             
 
@@ -22,7 +22,7 @@ namespace week_5_project
 
             for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine("Enter in your amount of goals scored:");
+                Console.WriteLine("Enter in your amount of goals scored: ");
                 int goals = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Enter in your amount of assists");
