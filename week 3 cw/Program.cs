@@ -40,36 +40,9 @@
 
 
 
-            //day 3 
-            double a, b, c;
-            double total;
+           
 
-            string inputString;
-
-            Console.WriteLine("Enter your name: ");
-
-            inputString = Console.ReadLine();
-
-            Console.WriteLine("Enter your first number");
-            inputString = Console.ReadLine();
-            a = Convert.ToDouble(inputString);
-
-
-            Console.WriteLine("Enter in second number");
-            inputString = Console.ReadLine();
-            b = Convert.ToDouble(inputString);
-
-
-            Console.WriteLine("enter in third number ");
-            c = Convert.ToDouble(Console.ReadLine());
-
-
-            total = (a + b + c) / 3;
-            Console.WriteLine();
-            Console.WriteLine("There average is : {0}{1}", total.ToString("C"), "!");
-            //{0}=placeholder
-
-            Console.ReadKey();
+            
 
 
 
