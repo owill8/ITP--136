@@ -1,5 +1,7 @@
 ﻿
 
+using System.Numerics;
+
 namespace week_5_project
 {
     internal class Program
@@ -9,10 +11,10 @@ namespace week_5_project
 
 
            
-            int total_1;
-            int total_2;
+           
             int goals = 0;
             int assists = 0;
+            int total;
             
 
 
@@ -38,21 +40,18 @@ namespace week_5_project
                 Console.WriteLine("Enter in your amount of assists");
                  assists= Convert.ToInt32(Console.ReadLine());
 
+                total = goals + assists;
 
-               
-
+                Console.WriteLine("Your total points = {0}", total + " Points\n ");
 
             }
 
 
 
-            total_1 = (goals + assists) * counter;
-            total_2 = goals + assists;
-            double average = total_2 / counter;
+            
 
 
-            Console.WriteLine("Your total points = {0}",  total_1 + " Points\n ");
-            Console.WriteLine("Your average points per game = {0}\n", average);
+            
             Console.WriteLine("Thanks for using my sports calculator!!\n");
             Console.WriteLine("\t\t PRESS ENTER TO CLOSE!");
            
