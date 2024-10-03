@@ -25,7 +25,7 @@
         }
         static void WelcomeMessage()
         {
-            Console.WriteLine("Welcome to my calculator");
+            Console.WriteLine("Welcome to my calculator"); 
 
             Console.ReadKey();
         }
