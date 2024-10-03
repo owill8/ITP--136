@@ -15,10 +15,16 @@
             
             for (int i = 0; i < count; i++)
             {
+                
+                
                 WelcomeStatement();
+                
                 int secretNumber = 8;
-                MagicNumber(secretNumber);
+
+                MagicNumber(secretNumber); // calling method;
+                
                 int L, W;
+                
                 Console.WriteLine("Enter in your length: ");
                 L = Convert.ToInt32(Console.ReadLine());
 
@@ -26,9 +32,9 @@
                 Console.WriteLine("Enter in your width: ");
                 W = Convert.ToInt32(Console.ReadLine());
 
-                FindArea(L, W);
+                FindArea(L, W);//calling method
 
-                double taxRate = LocalTaxRate();//taxRate variable
+                double taxRate = LocalTaxRate();//taxRate variable-calling method
 
 
                 Console.WriteLine("Your tax rate is " + taxRate);
