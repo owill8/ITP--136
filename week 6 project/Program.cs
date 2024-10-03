@@ -18,8 +18,15 @@
                 WelcomeStatement();
                 int secretNumber = 8;
                 MagicNumber(secretNumber);
+                int L, W;
+                Console.WriteLine("Enter in your length: ");
+                L = Convert.ToInt32(Console.ReadLine());
 
-                FindArea();
+
+                Console.WriteLine("Enter in your width: ");
+                W = Convert.ToInt32(Console.ReadLine());
+
+                FindArea(L, W);
 
                 double taxRate = LocalTaxRate();//taxRate variable
 
@@ -37,18 +44,15 @@
         {
             Console.WriteLine("Your Magic Number is " + secretNumber);
         }
-        static void FindArea()
+        static void FindArea(int L, int W)
         {
-            Console.WriteLine("Enter in your length: ");
-             int length = Convert.ToInt32(Console.ReadLine());
+           
 
+            double result = L * W;
 
-            Console.WriteLine("Enter in your width: ");
-             int width = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Your area is " + result);
 
-            double result = length * width;
-
-            Console.WriteLine("Your area is {0}" , result);
+            Console.WriteLine("\tPRESS ENTER");
 
             Console.ReadKey();
         }
