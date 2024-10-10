@@ -104,15 +104,13 @@ namespace week_7_project
 
                 Console.WriteLine("How many bags?");
                 int bags = Convert.ToInt32(Console.ReadLine());
-                for (int i = 0; i < bags; i++)
-                {
+                
                     
                     
                     int total = bags * bag;
                     return total;
 
                 }
-            }
 
 
             else
@@ -120,7 +118,7 @@ namespace week_7_project
                 Console.WriteLine("Ok thanks for visiting! ");
                 return 0;
             }
-            return bag;
+            
 
 
             
