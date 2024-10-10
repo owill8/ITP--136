@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "week 5 project", "week 5 pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "week 5 CW", "week 5 CW\week 5 CW.csproj", "{09D671B6-4CA6-44AE-8248-F351E1141C7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "week 6 project", "week 6 project\week 6 project.csproj", "{A573F7DC-9D4D-44E4-9D49-DF3D0E015A2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "week 6 project", "week 6 project\week 6 project.csproj", "{A573F7DC-9D4D-44E4-9D49-DF3D0E015A2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CW-week_6", "CW-week_6\CW-week_6.csproj", "{D38FC03D-D0F9-4677-8637-FF4E58EF0D4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CW-week_6", "CW-week_6\CW-week_6.csproj", "{D38FC03D-D0F9-4677-8637-FF4E58EF0D4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "week 7 project", "week 7 project\week 7 project.csproj", "{6A8A1635-7854-438C-8D5A-D973E8638BC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{D38FC03D-D0F9-4677-8637-FF4E58EF0D4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D38FC03D-D0F9-4677-8637-FF4E58EF0D4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D38FC03D-D0F9-4677-8637-FF4E58EF0D4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A8A1635-7854-438C-8D5A-D973E8638BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A8A1635-7854-438C-8D5A-D973E8638BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A8A1635-7854-438C-8D5A-D973E8638BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A8A1635-7854-438C-8D5A-D973E8638BC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

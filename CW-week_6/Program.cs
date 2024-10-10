@@ -9,6 +9,8 @@
 
             int a, b;
 
+            a = 5;
+
             WelcomeMessage();
             for (int i = 0; i < 3; i++)//3 problems for adding because of for loop
             {
