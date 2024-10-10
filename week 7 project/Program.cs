@@ -29,27 +29,15 @@ namespace week_7_project
            
 
             
-            
-
-
                 int collectseats;
                 collectseats = collectSeats();//call
 
-                Console.WriteLine("Your total price is: {0}", collectseats.ToString("C"));
+                
+            Console.WriteLine("Your total price is: {0}", collectseats.ToString("C"));
 
                 
             
-                
-
-
-
-                Console.WriteLine("Enter in how many bags: ");
-                int count = Convert.ToInt32(Console.ReadLine());
-            
-            for (int i = 0; i < count; i++)
-                {
-
-                    int collect_Bags;
+                int collect_Bags;
 
                     collect_Bags = collectBags();//call
 
@@ -77,7 +65,7 @@ namespace week_7_project
                     Console.WriteLine(".*.*.*.*.*.*.*.*.*.*");
 
                 
-                }
+                
 
             
             
@@ -110,24 +98,29 @@ namespace week_7_project
                 Console.WriteLine("Do you want to check bags? ");
                 option = Console.ReadLine();
 
-                if (option == "Y" || option == "y")
+            if (option == "Y" || option == "y")
+            {
+
+
+                Console.WriteLine("How many bags?");
+                int bags = Convert.ToInt32(Console.ReadLine());
+                for (int i = 0; i < bags; i++)
                 {
                     
                     
-                        Console.WriteLine("How many bags?");
-                        int bags = Convert.ToInt32(Console.ReadLine());
-
-                int total = bags * bag;
-                return total;
+                    int total = bags * bag;
+                    return total;
 
                 }
-                
-                
-                else
-                {
-                    Console.WriteLine("Ok thanks for visiting! ");
-                    return 0;
-                }
+            }
+
+
+            else
+            {
+                Console.WriteLine("Ok thanks for visiting! ");
+                return 0;
+            }
+            return bag;
 
 
             
