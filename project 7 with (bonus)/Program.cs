@@ -28,9 +28,9 @@ namespace project_7_with__bonus_
 
 
             BagData(25);
-            CollectSeats(30);
+            CollectSeats(30,0);
 
-
+            
 }
 
         static void BagData(int bag)
@@ -47,7 +47,7 @@ namespace project_7_with__bonus_
                 Console.WriteLine("Enter in number of bags");
                 int bags = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine();
-                for (int i = 0; i < bags; i++)
+                for (int i = 0; i <= bags; i++)
                 {
                     double tax = .05;
                     double subTotal = bag * bags;
@@ -91,10 +91,10 @@ namespace project_7_with__bonus_
             
         }
 
-        static void CollectSeats(int seat)
+        static void CollectSeats(int seat,int i)
         {
             string option;
-            int i = 0;
+            
 
 
             Console.WriteLine("Do you want to pay for seats? Y/N  ");
@@ -106,7 +106,7 @@ namespace project_7_with__bonus_
                 Console.WriteLine("Enter in number of seats");
                 int seats = Convert.ToInt32(Console.ReadLine());
 
-                while (i < seats)
+                while (i <= seats)
                 {
 
                     double tax = .05;
@@ -146,6 +146,6 @@ namespace project_7_with__bonus_
             Console.ReadKey();
         }
         
-
+        
     }
 }

@@ -30,18 +30,19 @@ namespace week_7_project
 
             
                 int collectseats;
-                collectseats = collectSeats();//call
+            collectseats = collectSeats(1, 0, 30);
 
                 
             Console.WriteLine("Your total price is: {0}", collectseats.ToString("C"));
 
 
-            Console.WriteLine("Enter in your # of bags");
-            int count = Convert.ToInt32(Console.ReadLine());
                 int collect_Bags;
 
-                    collect_Bags =collectBags(count);//call
+                    collect_Bags =collectBags(25,0);//call
 
+            
+            Console.WriteLine("Your total for bags: {0}",collect_Bags.ToString("C"));
+            Console.WriteLine();
 
                     
 
@@ -49,37 +50,35 @@ namespace week_7_project
 
                     double tip = .05;
                 
-                    double GrandTax = (collect_Bags + collectseats) * tip;//calculate the tip amount 
+                    double TaxAmount = (collect_Bags + collectseats) * tip;//calculate the tip amount 
                     double SubTotal = (collect_Bags) + (collectseats);//total before tax added 
-                    double GrandTotal = SubTotal + GrandTax;//total after tax gets added
-                    
-                     Console.ForegroundColor = ConsoleColor.Green;
-                     Console.WriteLine("#############################");
-                     Console.WriteLine("          Receipt            ");
-                     Console.WriteLine("#############################");
-                     Console.ForegroundColor = ConsoleColor.White;
+                    double GrandTotal = SubTotal + TaxAmount;//total after tax gets added
 
-                    Console.WriteLine(".*.*.*.*.*.*.*.*.*.*");
-                    Console.WriteLine("Total is: {0}", SubTotal.ToString("C"));
-                    Console.WriteLine("Tax amount: {0}", GrandTax.ToString("C"));
-                    Console.WriteLine("Grand Total amount: {0}", GrandTotal.ToString("C"));
-                    Console.WriteLine(".*.*.*.*.*.*.*.*.*.*");
 
-                
-                
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("#############################");
+            Console.WriteLine("          Receipt            ");
+            Console.WriteLine("#############################\n");
+            Console.ForegroundColor = ConsoleColor.White;
 
-            
-            
 
-            
+            Console.WriteLine(".*.*.*.*.*.*.*.*.*.*");
+            Console.WriteLine("SubTotal is: {0}", SubTotal.ToString("C"));
+            Console.WriteLine("Tax amount: {0}", TaxAmount.ToString("C"));
+            Console.WriteLine("Grand Total amount: {0}", GrandTotal.ToString("C"));
+            Console.WriteLine(".*.*.*.*.*.*.*.*.*.*\n");
 
-            
 
-            
+
+
+
+
+
+
+
 
 
            
-            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Name: {0}\n", Name);
             Console.WriteLine("Address: {0}\n ", Address);
             Console.WriteLine("Date of travel: {0} ", Date_of_travel);
@@ -89,53 +88,80 @@ namespace week_7_project
 
 
         }
-        static int collectBags(int count)
+        static int collectBags(int bag,int total)
         {
-            int bag = 25;
+            
             string option;
-            
-            
 
             
+
                 Console.WriteLine("Do you want to check bags? ");
                 option = Console.ReadLine();
 
             if (option == "Y" || option == "y")
             {
 
+
+
+
+                Console.WriteLine("How many bags?");
+
+                int bags1 = Convert.ToInt32(Console.ReadLine());
+
+                for (int i = 1; i <= bags1; i++)
+                {
+
+
+                    Console.WriteLine("How many bags? 25$ each");
+
+                      int bags = Convert.ToInt32(Console.ReadLine());
+
+
+                    
+                    total +=(bags * bag);
+                    
+                   
+
+
+
+
+
+
+
+                }
                 
+                return total;
+               
 
-
-                
-                    Console.WriteLine("How many bags?");
-                    int bags = Convert.ToInt32(Console.ReadLine());
-
-
-
-                    int total = bags * bag;
-                    return total;
-                
                 }
 
 
-            else
-            {
-                Console.WriteLine("Ok thanks for visiting! ");
-                return 0;
-            }
+
+
+
+
+
+                else
+                {
+                    Console.WriteLine("Ok thanks for visiting! ");
+                    return 0;
+                }
+
+
+
+
             
-
-
             
 
         }
 
 
 
-            static int collectSeats()
+            static int collectSeats(int i,int total,int seat)
             {
                 string option;
-                int seat = 30;
+            
+            
 
 
                 Console.WriteLine("Do you want to pay for seats Y/N ? ");
@@ -144,18 +170,34 @@ namespace week_7_project
                 if (option == "Y" || option == "y")
                 {
 
-                    Console.WriteLine("Enter in your amount of seats ");
+                Console.WriteLine("How many times do you want to purchase seats");
                     int seats = Convert.ToInt32(Console.ReadLine());
+                while (i <= seats)
+                {
 
-                    int total2 = seat * seats;
-                    return total2;
+                    Console.WriteLine("How many seats? 30$ each seat");
+                    int seats2 = Convert.ToInt32(Console.ReadLine());
+                    total += seats2* seat;
+                    i++;
+                    
                 }
-                else
+                return total;
+
+
+
+            }
+                
+            
+            
+            
+            
+            else
                 {
                     Console.WriteLine("You did not buy any seats");
-                    return 0;
+                return 0;
                 }
-            }
+            
+        }
 
 
 
