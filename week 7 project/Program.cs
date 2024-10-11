@@ -35,14 +35,15 @@ namespace week_7_project
                 
             Console.WriteLine("Your total price is: {0}", collectseats.ToString("C"));
 
-                
-            
+
+            Console.WriteLine("Enter in your # of bags");
+            int count = Convert.ToInt32(Console.ReadLine());
                 int collect_Bags;
 
-                    collect_Bags = collectBags();//call
+                    collect_Bags =collectBags(count);//call
 
 
-                    Console.WriteLine("Your total price for bags is {0} \n", collect_Bags.ToString("C"));
+                    
 
                     
 
@@ -88,10 +89,11 @@ namespace week_7_project
 
 
         }
-        static int collectBags()
+        static int collectBags(int count)
         {
             int bag = 25;
             string option;
+            
             
 
             
@@ -101,15 +103,18 @@ namespace week_7_project
             if (option == "Y" || option == "y")
             {
 
-
-                Console.WriteLine("How many bags?");
-                int bags = Convert.ToInt32(Console.ReadLine());
                 
-                    
-                    
+
+
+                
+                    Console.WriteLine("How many bags?");
+                    int bags = Convert.ToInt32(Console.ReadLine());
+
+
+
                     int total = bags * bag;
                     return total;
-
+                
                 }
 
 
