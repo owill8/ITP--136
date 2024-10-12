@@ -26,33 +26,27 @@ namespace week_7_project
             Console.WriteLine("Enter in your date of travel:  MONTH/DATE/YEAR : ");
             Date_of_travel = Console.ReadLine();
 
-           
 
-            
-                int collectseats;
-            collectseats = collectSeats(1, 0, 30);
+            int collectseats;
+            collectseats = collectSeats(1, 0, 30);//call
 
-                
+
             Console.WriteLine("Your total price is: {0}", collectseats.ToString("C"));
 
 
-                int collect_Bags;
+            int collect_Bags;
 
-                    collect_Bags =collectBags(25,0);//call
+            collect_Bags = collectBags(25, 0);//call
 
-            
-            Console.WriteLine("Your total for bags: {0}",collect_Bags.ToString("C"));
+
+            Console.WriteLine("Your total for bags: {0}", collect_Bags.ToString("C"));
             Console.WriteLine();
 
-                    
+            double tip = .05;
 
-                    
-
-                    double tip = .05;
-                
-                    double TaxAmount = (collect_Bags + collectseats) * tip;//calculate the tip amount 
-                    double SubTotal = (collect_Bags) + (collectseats);//total before tax added 
-                    double GrandTotal = SubTotal + TaxAmount;//total after tax gets added
+            double TaxAmount = (collect_Bags + collectseats) * tip;//calculate the tip amount 
+            double SubTotal = (collect_Bags) + (collectseats);//total before tax added 
+            double GrandTotal = SubTotal + TaxAmount;//total after tax gets added
 
 
             Console.ForegroundColor = ConsoleColor.Green;
@@ -68,41 +62,25 @@ namespace week_7_project
             Console.WriteLine("Grand Total amount: {0}", GrandTotal.ToString("C"));
             Console.WriteLine(".*.*.*.*.*.*.*.*.*.*\n");
 
-
-
-
-
-
-
-
-
-
-
-           
             Console.WriteLine("Name: {0}\n", Name);
             Console.WriteLine("Address: {0}\n ", Address);
             Console.WriteLine("Date of travel: {0} ", Date_of_travel);
 
             Console.ReadKey();
 
-
-
         }
-        static int collectBags(int bag,int total)
+        static int collectBags(int bag, int total)
         {
-            
+
             string option;
 
-            
 
-                Console.WriteLine("Do you want to check bags? ");
-                option = Console.ReadLine();
+
+            Console.WriteLine("Do you want to check bags? ");
+            option = Console.ReadLine();
 
             if (option == "Y" || option == "y")
             {
-
-
-
 
                 Console.WriteLine("How many bags?");
 
@@ -111,96 +89,58 @@ namespace week_7_project
                 for (int i = 1; i <= bags1; i++)
                 {
 
-
                     Console.WriteLine("How many bags? 25$ each");
 
-                      int bags = Convert.ToInt32(Console.ReadLine());
+                    int bags = Convert.ToInt32(Console.ReadLine());
 
-
-                    
-                    total +=(bags * bag);
-                    
-                   
-
-
-
-
-
-
-
+                    total += (bags * bag);
                 }
-                
+
                 return total;
-               
+            }
 
-                }
-
-
-
-
-
-
-
-                else
-                {
-                    Console.WriteLine("Ok thanks for visiting! ");
-                    return 0;
-                }
-
-
-
-
-            
-            
+            else
+            {
+                Console.WriteLine("Ok thanks for visiting! ");
+                return 0;
+            }
 
         }
 
 
+        static int collectSeats(int i, int total, int seat)
+        {
+            string option;
 
-            static int collectSeats(int i,int total,int seat)
+            Console.WriteLine("Do you want to pay for seats Y/N ? ");
+            option = Console.ReadLine();
+
+            if (option == "Y" || option == "y")
             {
-                string option;
-            
-            
-
-
-                Console.WriteLine("Do you want to pay for seats Y/N ? ");
-                option = Console.ReadLine();
-
-                if (option == "Y" || option == "y")
-                {
 
                 Console.WriteLine("How many times do you want to purchase seats");
-                    int seats = Convert.ToInt32(Console.ReadLine());
+                int seats = Convert.ToInt32(Console.ReadLine());
                 while (i <= seats)
                 {
 
                     Console.WriteLine("How many seats? 30$ each seat");
                     int seats2 = Convert.ToInt32(Console.ReadLine());
-                    total += seats2* seat;
+                    total += seats2 * seat;
                     i++;
-                    
+
                 }
                 return total;
-
-
-
             }
-                
-            
-            
-            
-            
+
             else
-                {
-                    Console.WriteLine("You did not buy any seats");
+            {
+                Console.WriteLine("You did not buy any seats");
                 return 0;
-                }
+            }
             
         }
+        
 
-
-
-        }
     }
+}
 
