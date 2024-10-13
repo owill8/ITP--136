@@ -9,11 +9,10 @@ namespace week_7_project
         static void Main(string[] args)
         {
             string Name, Address, Date_of_travel;
-            
+
             Console.WriteLine("*****************************");
             Console.WriteLine("Welcome to Reynolds Airline!!");
             Console.WriteLine("*****************************\n");
-
 
             Console.WriteLine("Enter in your name: ");
             Name = Console.ReadLine();
@@ -31,15 +30,15 @@ namespace week_7_project
             collectseats = collectSeats(1, 0, 30);//call
 
             Console.WriteLine("Your total price is: {0}", collectseats.ToString("C"));
-            
+
             Console.WriteLine();
-            
+
             int collect_Bags;
 
             collect_Bags = collectBags(25, 0);//call
 
             Console.WriteLine("Your total for bags: {0}", collect_Bags.ToString("C"));
-           
+
             Console.WriteLine();
 
             double tip = .05;
@@ -48,13 +47,11 @@ namespace week_7_project
             double SubTotal = (collect_Bags) + (collectseats);//total before tax added 
             double GrandTotal = SubTotal + TaxAmount;//total after tax gets added
 
-
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("#############################");
             Console.WriteLine("          Receipt            ");
             Console.WriteLine("#############################\n");
             Console.ForegroundColor = ConsoleColor.White;
-
 
             Console.WriteLine(".*.*.*.*.*.*.*.*.*.*");
             Console.WriteLine("SubTotal is: {0}", SubTotal.ToString("C"));
