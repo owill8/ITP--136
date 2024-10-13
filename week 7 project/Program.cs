@@ -8,38 +8,38 @@ namespace week_7_project
     {
         static void Main(string[] args)
         {
-            string Name;
-            string Address;
-            string Date_of_travel;
-
-
+            string Name, Address, Date_of_travel;
+            
             Console.WriteLine("*****************************");
             Console.WriteLine("Welcome to Reynolds Airline!!");
             Console.WriteLine("*****************************\n");
 
+
             Console.WriteLine("Enter in your name: ");
             Name = Console.ReadLine();
+            Console.WriteLine();
 
             Console.WriteLine("Enter in your Address: ");
             Address = Console.ReadLine();
+            Console.WriteLine();
 
             Console.WriteLine("Enter in your date of travel:  MONTH/DATE/YEAR : ");
             Date_of_travel = Console.ReadLine();
-
+            Console.WriteLine();
 
             int collectseats;
             collectseats = collectSeats(1, 0, 30);//call
 
-
             Console.WriteLine("Your total price is: {0}", collectseats.ToString("C"));
-
-
+            
+            Console.WriteLine();
+            
             int collect_Bags;
 
             collect_Bags = collectBags(25, 0);//call
 
-
             Console.WriteLine("Your total for bags: {0}", collect_Bags.ToString("C"));
+           
             Console.WriteLine();
 
             double tip = .05;
@@ -66,6 +66,14 @@ namespace week_7_project
             Console.WriteLine("Address: {0}\n ", Address);
             Console.WriteLine("Date of travel: {0} ", Date_of_travel);
 
+            Console.WriteLine();
+
+            Console.WriteLine("Thanks for using Reynolds Airline!");
+
+            Console.WriteLine();
+
+            Console.WriteLine("[PRESS ENTER TO CLOSE]");
+
             Console.ReadKey();
 
         }
@@ -73,8 +81,6 @@ namespace week_7_project
         {
 
             string option;
-
-
 
             Console.WriteLine("Do you want to check bags? ");
             option = Console.ReadLine();
@@ -84,16 +90,16 @@ namespace week_7_project
 
                 Console.WriteLine("How many bags?");
 
-                int bags1 = Convert.ToInt32(Console.ReadLine());
+                int bags_1 = Convert.ToInt32(Console.ReadLine());
 
-                for (int i = 1; i <= bags1; i++)
+                for (int i = 1; i <= bags_1; i++)
                 {
 
                     Console.WriteLine("How many bags? 25$ each");
 
                     int bags = Convert.ToInt32(Console.ReadLine());
 
-                    total += (bags * bag);
+                    total += bags * bag;
                 }
 
                 return total;
@@ -102,11 +108,10 @@ namespace week_7_project
             else
             {
                 Console.WriteLine("Ok thanks for visiting! ");
-                return 0;
+                return 0;//will return $0.00 to main
             }
 
         }
-
 
         static int collectSeats(int i, int total, int seat)
         {
@@ -114,6 +119,8 @@ namespace week_7_project
 
             Console.WriteLine("Do you want to pay for seats Y/N ? ");
             option = Console.ReadLine();
+
+            Console.WriteLine();
 
             if (option == "Y" || option == "y")
             {
@@ -132,15 +139,13 @@ namespace week_7_project
                 return total;
             }
 
-            else
+            else//option N or n
             {
                 Console.WriteLine("You did not buy any seats");
                 return 0;
             }
-            
-        }
-        
 
+        }
     }
 }
 
