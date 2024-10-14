@@ -49,7 +49,7 @@ namespace week_7_project
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("#############################");
-            Console.WriteLine("          Receipt            ");
+            Console.WriteLine("###########Receipt###########");
             Console.WriteLine("#############################\n");
             Console.ForegroundColor = ConsoleColor.White;
 
