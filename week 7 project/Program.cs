@@ -85,7 +85,7 @@ namespace week_7_project
             if (option == "Y" || option == "y")
             {
 
-                Console.WriteLine("How many bags?");
+                Console.WriteLine("How many flight do you want to purchase bags?");
 
                 int bags_1 = Convert.ToInt32(Console.ReadLine());
 
@@ -122,7 +122,7 @@ namespace week_7_project
             if (option == "Y" || option == "y")
             {
 
-                Console.WriteLine("How many times do you want to purchase seats");
+                Console.WriteLine("How many flights do you want to purchase seats");
                 int seats = Convert.ToInt32(Console.ReadLine());
                 while (i <= seats)
                 {
