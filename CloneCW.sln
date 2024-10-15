@@ -19,11 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "week 6 project", "week 6 pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CW-week_6", "CW-week_6\CW-week_6.csproj", "{D38FC03D-D0F9-4677-8637-FF4E58EF0D4B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "week 7 project", "week 7 project\week 7 project.csproj", "{6A8A1635-7854-438C-8D5A-D973E8638BC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "week 7 project(final)", "week 7 project\week 7 project(final).csproj", "{6A8A1635-7854-438C-8D5A-D973E8638BC3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{380D5B0B-12BB-43E4-A2D0-A7FC91DD61FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project 7 with (bonus)", "project 7 with (bonus)\project 7 with (bonus).csproj", "{922BBB26-6240-42B0-8E88-213CB8B5F20A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "project 7 with (bonus)", "project 7 with (bonus)\project 7 with (bonus).csproj", "{922BBB26-6240-42B0-8E88-213CB8B5F20A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

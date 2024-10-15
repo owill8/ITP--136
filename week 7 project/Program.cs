@@ -47,7 +47,7 @@ namespace week_7_project
             double SubTotal = (collect_Bags) + (collectseats);//total before tax added 
             double GrandTotal = SubTotal + TaxAmount;//total after tax gets added
 
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine("#############################");
             Console.WriteLine("###########Receipt###########");
             Console.WriteLine("#############################\n");
@@ -69,8 +69,9 @@ namespace week_7_project
 
             Console.WriteLine();
 
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("[PRESS ENTER TO CLOSE]");
-
+            Console.ForegroundColor = ConsoleColor.White;
             Console.ReadKey();
 
         }
@@ -85,7 +86,7 @@ namespace week_7_project
             if (option == "Y" || option == "y")
             {
 
-                Console.WriteLine("How many flight do you want to purchase bags?");
+                Console.WriteLine("How many flights do you want to purchase bags?");
 
                 int bags_1 = Convert.ToInt32(Console.ReadLine());
 
@@ -104,7 +105,13 @@ namespace week_7_project
 
             else
             {
-                Console.WriteLine("Ok thanks for visiting! ");
+
+                Console.WriteLine("--------------------------------");
+                Console.WriteLine("---You did not check any bags---");
+                Console.WriteLine("--------------------------------");
+
+                Console.WriteLine();
+
                 return 0;//will return $0.00 to main
             }
 
@@ -138,7 +145,12 @@ namespace week_7_project
 
             else//option N or n
             {
-                Console.WriteLine("You did not buy any seats");
+                Console.WriteLine("-----------------------------");
+                Console.WriteLine("--You did not buy any seats--");
+                Console.WriteLine("-----------------------------");
+
+                Console.WriteLine();
+
                 return 0;
             }
 

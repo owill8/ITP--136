@@ -27,13 +27,13 @@ namespace project_7_with__bonus_
             Console.WriteLine("Your date of travel: " + Date_of_travel + "\n");
 
 
-            BagData(25);
+            BagData();
             CollectSeats(30,0);
 
             
 }
 
-        static void BagData(int bag)
+        static void BagData(int bag = 25)
         {
             string option;
             
