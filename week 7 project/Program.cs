@@ -27,6 +27,7 @@ namespace week_7_project
             Console.WriteLine();
 
             int collectseats;
+            
             collectseats = collectSeats(1, 0, 30);//call
 
             Console.WriteLine("Your total price is: {0}", collectseats.ToString("C"));
@@ -44,7 +45,9 @@ namespace week_7_project
             double tip = .05;
 
             double TaxAmount = (collect_Bags + collectseats) * tip;//calculate the tip amount 
+           
             double SubTotal = (collect_Bags) + (collectseats);//total before tax added 
+            
             double GrandTotal = SubTotal + TaxAmount;//total after tax gets added
 
             Console.ForegroundColor = ConsoleColor.DarkBlue;
@@ -130,7 +133,7 @@ namespace week_7_project
             {
 
                 Console.WriteLine("How many flights do you want to purchase seats");
-                int seats = Convert.ToInt32(Console.ReadLine());
+                int seats = Convert.ToInt32(Console.ReadLine());//loop stops at number you entered
                 while (i <= seats)
                 {
 
