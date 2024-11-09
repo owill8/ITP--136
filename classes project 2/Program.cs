@@ -9,23 +9,18 @@ namespace classes_project_2
             Console.WriteLine("Welcome to objects program");
 
             Console.WriteLine();
+            string[] Foodid = new string[100];
+
+            Food f1 = new Food(4958,"fortnite","REd",4);//constructor
+            Food f2 = new Food(5655,"Apple","Red",20);
 
 
-            Food f1 = new Food();
-            Food f2 = new Food();
+            Console.WriteLine(f2.TooMuch());
 
-            f1.FoodId = 49675;
-            f1.Name = "Apple";
-            f1.Description = "Red";
-            f1.Cost = 2;
+            Console.WriteLine("Enter in your food ID: ");
+            f1.FoodId = Convert.ToInt32(Console.ReadLine());
 
-            f2.FoodId = 5858;
-            f2.Name = "  Cheese Burger";
-            f2.Description = "Bun,Patty";
-
-      
-            f2.Cost = 20;
-
+            
 
 
             Console.WriteLine("{0,10}{1,20}{2,20}{3,20}", "FoodId", "Name", "Description", "Cost");

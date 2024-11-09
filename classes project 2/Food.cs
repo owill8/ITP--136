@@ -13,6 +13,15 @@ namespace classes_project_2
         string description;
         double cost;
 
+        public Food(int afID, string aname, string adescription,double acost)
+        {
+            this.fID = afID;
+            this.name = aname;
+            this.description = adescription;
+            this.cost = acost; 
+            
+        }
+
         public int FoodId
         {
             get { return fID; }
@@ -34,6 +43,15 @@ namespace classes_project_2
         {
             get { return cost; }
             set { cost = value; }
+        }
+
+        public bool TooMuch()
+        {
+            if (cost > 100)
+            {
+                return true;
+            }
+            return false;
         }
 
 
