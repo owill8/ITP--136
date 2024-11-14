@@ -11,8 +11,9 @@
             decimal a, b, result;
             int option;
 
-           
-            
+
+            while (true)
+            {
                 Console.WriteLine("\nEnter in number 1: ");
                 a = Convert.ToDecimal(Console.ReadLine());
 
@@ -84,7 +85,7 @@
                 }
 
                 Console.ReadKey();
-            
+            }
 
         }
     }
