@@ -38,7 +38,7 @@ namespace week_12_project
             set { partName = value; }
         }
 
-        public string ParDescription
+        public string PartDescription
         {
             get { return partDescription; }
             set { partDescription = value; }

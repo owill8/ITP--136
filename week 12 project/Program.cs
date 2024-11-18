@@ -6,6 +6,10 @@
         {
             Parts part1 = new Parts(1232, 20.20, "Cold air intake", "cold air");
 
+            Console.WriteLine("Constructor is " + part1.PartNum + " " + part1.Cost + " " + part1.PartName + " " + part1.PartDescription);
+
+            Console.WriteLine();
+
             int objectNum;
 
             Console.WriteLine("Enter in how many objects you wish to enter: ");
@@ -15,10 +19,10 @@
 
             for (int i = 0; i < partArray.Length; i++)
             {
-                populateObjects(ref partArray[i]);
+                populateObjects(ref partArray[i]);//ref object array 
             }
 
-            static void populateObjects(ref Parts part)
+            static void populateObjects(ref Parts part)//this is getting looped because of reference to the loop with the object array
             {
                
                int PartNum;
@@ -48,7 +52,7 @@
             
             for (int y = 0; y < partArray.Length; y++)
             {
-                Console.WriteLine(partArray[y].PartNum + " " + partArray[y].Cost + " " + partArray[y].PartName + " " + partArray[y].ParDescription);
+                Console.WriteLine(partArray[y].PartNum + " " + partArray[y].Cost + " " + partArray[y].PartName + " " + partArray[y].PartDescription);
 
                 Console.WriteLine();
             }
@@ -65,7 +69,7 @@
             for (int z = 0; z < partArray.Length; z++)
             {
 
-                Console.WriteLine(z + 1 + " " + partArray[z].PartNum + " " + partArray[z].Cost + " " + partArray[z].PartName + " " + partArray[z].ParDescription);
+                Console.WriteLine(z + 1 + " " + partArray[z].PartNum + " " + partArray[z].Cost + " " + partArray[z].PartName + " " + partArray[z].PartDescription);
 
                 Console.WriteLine();
             }
@@ -97,7 +101,7 @@
                 }
                 else if (userInput == 4)
                 {
-                    Console.WriteLine("Data: " + " " + parts.ParDescription);
+                    Console.WriteLine("Data: " + parts.PartDescription);
                 }
                 else
                 {
@@ -111,7 +115,7 @@
 
             for (int y = 0; y < partArray.Length; y++)
             {
-                Console.WriteLine(partArray[y].PartNum + " " + partArray[y].Cost + " " + partArray[y].PartName + " " + partArray[y].ParDescription);
+                Console.WriteLine(partArray[y].PartNum + " " + partArray[y].Cost + " " + partArray[y].PartName + " " + partArray[y].PartDescription);
             }
 
             Console.ReadKey();

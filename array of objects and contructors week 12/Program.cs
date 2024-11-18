@@ -12,7 +12,7 @@
 
             int numEmp;
 
-            Console.WriteLine("How many employees do you want to enter");
+            Console.WriteLine("How many employees do you want to enter");//new stuff 
             numEmp = Convert.ToInt32(Console.ReadLine());
 
             Employee[] empArray = new Employee[numEmp];
