@@ -25,7 +25,7 @@ namespace week_13_project
 
             Console.WriteLine();
 
-            Console.WriteLine("ENter in the number of teachers: ");
+            Console.WriteLine("Enter in the number of teachers: ");
             int NumOfTeacher = Convert.ToInt32(Console.ReadLine());
 
 
@@ -78,16 +78,16 @@ namespace week_13_project
 
             foreach (Student student in students)
             {
-                Console.WriteLine("{0,10}{1,20}{2,10}{3,10}{4,10}", student.IdNum, student.fullName, student.address, student.Major, student.Advisor);
+                Console.WriteLine("{0,10}{1,20}{2,10}{3,10}{4,10}", student.IdNum , student.fullName , student.address , student.Major , student.Advisor);
             }
 
             Console.WriteLine();
 
-            Console.WriteLine("{0,10}{1,20}{2,10}{3,10}{4,10}", "Id", "name", "Address", "Salary", "Years");
+            Console.WriteLine("{0,10}{1,20}{2,10}{3,10}{4,10}", "Id", "name", "Address", "Salary", "Years of service");
 
             foreach(Teacher teacher in teachers)
             {
-                Console.WriteLine("{0,10}{1,20}{2,10}{3,10}{4,10}", teacher.IdNum, teacher.fullName, teacher.address, teacher.Salary, teacher.Year_Of_Service);
+                Console.WriteLine("{0,10}{1,20}{2,10}{3,10}{4,10}", teacher.IdNum , teacher.fullName , teacher.address , teacher.Salary , teacher.Year_Of_Service);
             }
 
         }
