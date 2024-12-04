@@ -43,9 +43,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "array of objects and contru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "week 12 project", "week 12 project\week 12 project.csproj", "{D8A71B8A-111F-4966-A2EE-2F3C4846A970}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "week 13 cw", "week 13 cw\week 13 cw.csproj", "{0AF5AA16-06F0-4A70-932E-B79D79EAD093}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "week 13 cw", "week 13 cw\week 13 cw.csproj", "{0AF5AA16-06F0-4A70-932E-B79D79EAD093}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "week 13 project", "week 13 project\week 13 project.csproj", "{1D411BF6-685F-47CA-BE05-2B254ACA11AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "week 13 project", "week 13 project\week 13 project.csproj", "{1D411BF6-685F-47CA-BE05-2B254ACA11AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon game Final project", "Pokemon game Final project\Pokemon game Final project.csproj", "{8F38EA49-B49E-4A99-95FF-8D1A3A716835}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,10 @@ Global
 		{1D411BF6-685F-47CA-BE05-2B254ACA11AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D411BF6-685F-47CA-BE05-2B254ACA11AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D411BF6-685F-47CA-BE05-2B254ACA11AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F38EA49-B49E-4A99-95FF-8D1A3A716835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F38EA49-B49E-4A99-95FF-8D1A3A716835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F38EA49-B49E-4A99-95FF-8D1A3A716835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F38EA49-B49E-4A99-95FF-8D1A3A716835}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
