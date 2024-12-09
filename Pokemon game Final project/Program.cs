@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.Design;
+﻿using System;
+using System.ComponentModel.Design;
 using System.Numerics;
 using System.Xml.Serialization;
 
@@ -10,9 +11,9 @@ namespace Pokemon_game_Final_project
         {
             try
             {
-                Console.WriteLine("----------------------------------");
-                Console.WriteLine("--Welcome to Pokemon Battle game--");
-                Console.WriteLine("----------------------------------");
+                Console.WriteLine("-----------------------------------------");
+                Console.WriteLine("--Welcome to Pokemon Texted Battle game--");
+                Console.WriteLine("-----------------------------------------");
 
                 Console.WriteLine("In this game you will have an option to pick between 3 types of pokemon");
 
@@ -40,7 +41,9 @@ namespace Pokemon_game_Final_project
                     Console.WriteLine(pokemon);
                 }
 
-                Console.WriteLine("Water option below");
+                Console.WriteLine();
+
+                Console.WriteLine("Water enemy options below");
 
                 Console.WriteLine();
 
@@ -56,8 +59,10 @@ namespace Pokemon_game_Final_project
                 
 
                 Console.WriteLine();
+                Console.WriteLine();
 
                 Console.WriteLine("Choose your pokemon for battle:");
+                Console.WriteLine();
                 Console.WriteLine("1 - Fire type\n" + "2 - Water type\n" + "3 - Grass type\n");
                 int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -116,6 +121,11 @@ namespace Pokemon_game_Final_project
                     else
                     {
                         Console.WriteLine("OH NO, You have lost against the enemy! ");
+
+                        Console.WriteLine("You got the enemy down to the below hp: ");
+
+                        Console.WriteLine();
+                        Console.WriteLine("Health: " + enemy1.Health);
                     }
 
                 }
@@ -124,12 +134,12 @@ namespace Pokemon_game_Final_project
                 else if (choice == 2)
                 {
                     Pokemon player1 = new WaterPokemon("Squirtle");
-                    Pokemon enemy = new GrassPokemon("Snivy");
+                    Pokemon enemy2 = new GrassPokemon("Snivy");
 
                     Console.WriteLine("Player Pokemon " + player1);
-                    Console.WriteLine("Enemy Pokemon " + enemy);
+                    Console.WriteLine("Enemy Pokemon " + enemy2);
 
-                    while(player1.IsAlive() & enemy.IsAlive())
+                    while(player1.IsAlive() & enemy2.IsAlive())
                     {
                         Console.WriteLine("Enter in your attack ");
                         Console.WriteLine("\nEnter in your action: 1. Attack");
@@ -143,14 +153,14 @@ namespace Pokemon_game_Final_project
 
                             Console.ForegroundColor= ConsoleColor.Green;
 
-                            player1.Attack(enemy);
+                            player1.Attack(enemy2);
 
 
                             Console.WriteLine();
 
                             Console.ResetColor();
 
-                            if (enemy.IsAlive())
+                            if (enemy2.IsAlive())
                             {
                                 Console.WriteLine("Enemy Turn Description");
 
@@ -158,7 +168,7 @@ namespace Pokemon_game_Final_project
 
                                 Console.ForegroundColor= ConsoleColor.Red;
 
-                                enemy.Attack(player1);
+                                enemy2.Attack(player1);
 
                                 Console.ResetColor();
 
@@ -183,15 +193,25 @@ namespace Pokemon_game_Final_project
                     else
                     {
                         Console.WriteLine("OH NO, You have lost against the enemy! ");
+
+                        Console.WriteLine("You got the enemy down to the below hp: ");
+
+                        Console.WriteLine();
+                        Console.WriteLine("Health: " + enemy2.Health);
                     }
                 }
 
                 else if (choice == 3)
                 {
                     Pokemon player = new GrassPokemon("Treeko");
-                    Pokemon enemy = new WaterPokemon("Squirtle");
+                    Pokemon enemy3 = new WaterPokemon("Squirtle");
 
-                    while (player.IsAlive() & enemy.IsAlive())//keeps the game going as long as both enemy1 and player are above 0 Health
+                    Console.WriteLine("Player Pokemon " + player);
+                    Console.WriteLine("Enemy Pokemon " + enemy3);
+
+                    Console.WriteLine();
+
+                    while (player.IsAlive() & enemy3.IsAlive())//keeps the game going as long as both enemy1 and player are above 0 Health
                     {
                         Console.WriteLine("Enter in your attack");
                         Console.WriteLine("\nChoose your action: 1. Attack");
@@ -204,21 +224,21 @@ namespace Pokemon_game_Final_project
                             Console.WriteLine();
                             // Player attacks
                             Console.ForegroundColor = ConsoleColor.Green;
-                            player.Attack(enemy);
+                            player.Attack(enemy3);
 
                             Console.WriteLine();
 
                             Console.ResetColor();
 
                             // Opponent attacks if still alive
-                            if (enemy.IsAlive())
+                            if (enemy3.IsAlive())
                             {
                                 Console.WriteLine("Enemy player turn Description");
 
                                 Console.WriteLine();
 
                                 Console.ForegroundColor = ConsoleColor.Red;
-                                enemy.Attack(player);
+                                enemy3.Attack(player);
                                 Console.ResetColor();
 
                                 Console.WriteLine();
@@ -238,6 +258,11 @@ namespace Pokemon_game_Final_project
                     else
                     {
                         Console.WriteLine("OH NO, You have lost against the enemy! ");
+
+                        Console.WriteLine("You got the enemy down to the below hp: ");
+
+                        Console.WriteLine();
+                        Console.WriteLine("Health: " + enemy3.Health);
                     }
 
                 }

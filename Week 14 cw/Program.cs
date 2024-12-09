@@ -1,4 +1,4 @@
-﻿using ObjectsFromCSV;
+﻿using System;
 using System.Security.Cryptography.X509Certificates;
 
 namespace Week14cw
@@ -8,6 +8,7 @@ namespace Week14cw
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to ice cream shop");
+            
 
             char moreItems = 'y';
 
@@ -24,6 +25,20 @@ namespace Week14cw
 
                 Console.WriteLine("would you like to continue? y/n");
                 moreItems = Convert.ToChar(Console.ReadLine());
+
+                int choice;
+
+                Console.WriteLine("Would you like to add text to: \n 1.Flavor \n 2.Toppings");
+                choice = Convert.ToInt32(Console.ReadLine());
+
+                if (choice == 1)
+                {
+                    string path = @"C:\Users\owenc\Downloads";
+                    StreamWriter sw = File.AppendText(path);// object creation from StreamWriter class
+                    
+                }
+
+               
             }
 
             Console.WriteLine("{0,-15}{1,-20}{2,-20}", "Name", "Flavor", "topping");
