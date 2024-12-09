@@ -8,10 +8,14 @@ namespace Pokemon_game_Final_project
 {
     public class GrassPokemon : Pokemon
     {
-        public GrassPokemon(string name) : base(80, name,33, "Grass")
+        public GrassPokemon(string name) : base(240, name,33, "Grass")
         {
 
         }
         //override parent class attack
+        public override void Attack(Pokemon enemy)
+        {
+            base.Attack(enemy); 
+        }
     }
 }

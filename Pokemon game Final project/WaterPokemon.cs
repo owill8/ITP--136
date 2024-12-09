@@ -9,10 +9,14 @@ namespace Pokemon_game_Final_project
     public class WaterPokemon : Pokemon
 
     {
-        public WaterPokemon(string name) : base(120,name,12, "Water")
+        public WaterPokemon(string name) : base(300,name,50, "Water")
         {
 
         }
         //override attack from parent
+        public override void Attack(Pokemon enemy)
+        {
+            base.Attack(enemy);
+        }
     }
 }

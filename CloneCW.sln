@@ -49,6 +49,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "week 13 project", "week 13 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon game Final project", "Pokemon game Final project\Pokemon game Final project.csproj", "{8F38EA49-B49E-4A99-95FF-8D1A3A716835}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week 14 cw", "Week 14 cw\Week 14 cw.csproj", "{3CA2EF38-71A9-4CF2-AF3A-9714571374EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "week 14 project", "week 14 project\week 14 project.csproj", "{E4C40452-549F-434F-8470-75CD99689C43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +151,14 @@ Global
 		{8F38EA49-B49E-4A99-95FF-8D1A3A716835}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F38EA49-B49E-4A99-95FF-8D1A3A716835}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F38EA49-B49E-4A99-95FF-8D1A3A716835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA2EF38-71A9-4CF2-AF3A-9714571374EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA2EF38-71A9-4CF2-AF3A-9714571374EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA2EF38-71A9-4CF2-AF3A-9714571374EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA2EF38-71A9-4CF2-AF3A-9714571374EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C40452-549F-434F-8470-75CD99689C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C40452-549F-434F-8470-75CD99689C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C40452-549F-434F-8470-75CD99689C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C40452-549F-434F-8470-75CD99689C43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

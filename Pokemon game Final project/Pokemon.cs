@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -9,7 +10,23 @@ namespace Pokemon_game_Final_project
 {
     public class Pokemon
     {
-        public int Health { get; set; }
+        public int Health
+        {
+            get { return health; }
+            set
+            {
+                if (value < 0)
+                {
+                    health = 0;//makes so it does not show negative numbers
+                }
+                else
+                {
+                    health = value;
+                }
+            }
+        }
+
+        public int health;
         public string Name { get; set; }
         public int AttackPower { get; set; }
 
@@ -33,7 +50,7 @@ namespace Pokemon_game_Final_project
         public virtual void Attack(Pokemon enemy)//attack funtion to deal damage with enemy object
         {
             Console.WriteLine(Name + " " + " Attacks " + " " + enemy.Name);
-            enemy.TakeDamage(AttackPower);
+            enemy.TakeDamage(AttackPower);//attack power determines damage on take damage method.
         }
 
         public void TakeDamage(int damage)//function to calculate damage for the attack method 
@@ -41,7 +58,7 @@ namespace Pokemon_game_Final_project
             Health -= damage;
             Console.WriteLine(Name + " Takes " + damage + " DAMAGE!" + " Remaining Health: " + Health);
 
-            if (!IsAlive())
+            if (!IsAlive())//if below 0 hp
             {
                 Console.WriteLine(Name + " Has fainted");
             }
