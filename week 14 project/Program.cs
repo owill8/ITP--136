@@ -15,13 +15,22 @@ namespace Week14_project
 
             char Continue = 'y';
 
-            while(Continue == 'y' || Continue == 'Y')
+            while(Continue == 'y')
             {
                 CollectCakeOrders(ref cakeOrders);
+                counter++;
 
                 Console.WriteLine("Would you like to continue y/n");
                 Continue = Convert.ToChar(Console.ReadLine());
             }
+
+            Console.WriteLine("{0,-15}{1,-20}{2,-20}", "Name", "Decoration", "Design");
+
+            foreach(CakeOrders cakeOrder in cakeOrders)
+            {
+                Console.WriteLine("{0,-15}{1,-20}{2,-20}", cakeOrder.CakeName, cakeOrder.CakeDecoration, cakeOrder.CakeDescription);
+            }
+
 
             static void CollectCakeOrders(ref List<CakeOrders> co)
             {
