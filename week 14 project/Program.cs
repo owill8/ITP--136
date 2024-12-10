@@ -7,7 +7,10 @@ namespace Week14_project
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Cake Order shop");
+            Console.WriteLine("Welcome to Cake Order shop \nOptions will be decoration and designs for cakes");
+
+
+            Console.WriteLine();
 
             List<CakeOrders> cakeOrders = new List<CakeOrders>();
 
