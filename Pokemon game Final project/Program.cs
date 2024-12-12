@@ -16,6 +16,10 @@ namespace Pokemon_game_Final_project
                 Console.WriteLine("--Welcome to Pokemon Text Battle game----");
                 Console.WriteLine("-----------------------------------------");
 
+                Console.WriteLine("You will have the option to attack the enemy untill the enemy dies");
+
+                Console.WriteLine();
+
                 Console.WriteLine("In this game you will have an option to pick between 2 types of pokemon");
 
                 Console.WriteLine();
