@@ -12,7 +12,7 @@ namespace Pokemon_game_Final_project
             try
             {
                 Console.WriteLine("-----------------------------------------");
-                Console.WriteLine("--Welcome to Pokemon Texted Battle game--");
+                Console.WriteLine("--Welcome to Pokemon Text Battle game----");
                 Console.WriteLine("-----------------------------------------");
 
                 Console.WriteLine("In this game you will have an option to pick between 3 types of pokemon");
@@ -279,6 +279,10 @@ namespace Pokemon_game_Final_project
                 Console.WriteLine("Enter in numbers only + " + ex);
 
             }
+
+            Console.WriteLine();
+
+            Console.WriteLine("Thanks for playing my text Pokemon Game!");
             
 
             
