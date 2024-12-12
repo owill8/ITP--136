@@ -74,6 +74,8 @@ namespace Pokemon_game_Final_project
             return Name + " - " + "Type: " + Type + " " + "HP:" + " " + Health + " " + "Attack Power: " + AttackPower;
         }
 
+       
+
         
 
     }

@@ -9,13 +9,14 @@ namespace Pokemon_game_Final_project
     {
         static void Main(string[] args)
         {
+
             try
             {
                 Console.WriteLine("-----------------------------------------");
                 Console.WriteLine("--Welcome to Pokemon Text Battle game----");
                 Console.WriteLine("-----------------------------------------");
 
-                Console.WriteLine("In this game you will have an option to pick between 3 types of pokemon");
+                Console.WriteLine("In this game you will have an option to pick between 2 types of pokemon");
 
                 Console.WriteLine();
 
@@ -61,9 +62,11 @@ namespace Pokemon_game_Final_project
                 Console.WriteLine();
                 Console.WriteLine();
 
-                Console.WriteLine("Choose your pokemon for battle:");
+                Console.WriteLine("Choose your pokemon for battle:(Enter 1,2,3) ");
+                
                 Console.WriteLine();
                 Console.WriteLine("1 - Fire type\n" + "2 - Water type\n" + "3 - Grass type\n");
+              
                 int choice = Convert.ToInt32(Console.ReadLine());
 
                 if (choice == 1)

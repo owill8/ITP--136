@@ -8,7 +8,7 @@ namespace Pokemon_game_Final_project
 {
     public class GrassPokemon : Pokemon
     {
-        public GrassPokemon(string name) : base(240, name,33, "Grass")
+        public GrassPokemon(string name) : base(190, name,33, "Grass")
         {
 
         }

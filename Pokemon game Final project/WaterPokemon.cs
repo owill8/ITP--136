@@ -9,7 +9,7 @@ namespace Pokemon_game_Final_project
     public class WaterPokemon : Pokemon
 
     {
-        public WaterPokemon(string name) : base(300,name,50, "Water")
+        public WaterPokemon(string name) : base(200,name,50, "Water")
         {
 
         }
